@@ -19,7 +19,6 @@ int main() {
       << std::chrono::duration<double, std::milli>(timeEnd - timeStart).count()
       << " ms\n";
 
- 
   std::random_device randomDevice;
   std::mt19937 generator(randomDevice());
   std::uniform_int_distribution<> distribution(1, allPermutations.size());
@@ -43,7 +42,6 @@ int main() {
       << std::chrono::duration<double, std::milli>(timeEnd - timeStart).count()
       << " ms\n";
 
- 
   if (permutation1 != permutation2) {
     std::cerr << "Error: Different results from getPerm1 and getPerm2!\n";
     return 1;
